@@ -23,13 +23,13 @@ public:
 	static bool isLegalCard (const std::string &rcDenomination,
 													 const std::string &rcSuit);
 	
-	static const std::vector<std::string> cSuit;
-	static const std::vector<std::string> cDenomination;
+	static const std::vector<std::string> cSuits;
+	static const std::vector<std::string> cDenominations;
 
 	friend std::istream& operator>> (std::istream& rcIn, Card& rcCard);
 	friend std::ostream& operator<< (std::ostream& rcOut, const Card& rcCard);
 
 private:
-	std::string mcSuits;
-	std::string mcDenominations;
+	std::string mcSuit;
+	std::string mcDenomination;
 };
