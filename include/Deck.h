@@ -13,7 +13,7 @@ public:
 	void shuffle ();
 	Card dealCard ();
 	int cardsLeft () const;
-	friend std::ostream& operator<< (std::ostream& os, const Deck &rcDeck);
+	friend std::ostream& operator<< (std::ostream &rcOut, const Deck &rcDeck);
 
 private:
 	static const int MAX_CARDS_IN_DECK = 52;
